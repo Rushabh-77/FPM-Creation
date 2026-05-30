@@ -4,6 +4,7 @@ import idol from "@/assets/product-idol.jpg";
 import gift from "@/assets/product-gift.jpg";
 import type { Product } from "@/lib/site";
 
+
 export const products: Product[] = [
   {
     id: "royal-gold-frame",

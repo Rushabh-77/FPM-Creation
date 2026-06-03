@@ -18,7 +18,7 @@ const Home = () => {
               New Festive Collection 2026
             </span>
             <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-semibold leading-[1.05] mt-5">
-              Gifts that feel <span className="text-gold italic">precious</span>,<br />
+              Gifts that feelllllllllll <span className="text-gold italic">precious</span>,<br />
               priced to <span className="text-gold italic">delight</span>.
             </h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-lg">

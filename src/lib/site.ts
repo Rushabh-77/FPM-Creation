@@ -1,8 +1,8 @@
 export const SITE = {
   name: "FPM Creation",
   tagline: "Affordable Luxury, Crafted with Love",
-  phone: "+91 98765 43210",
-  whatsapp: "919876543210", // change to your number
+  phone: "+91 7016838316",
+  whatsapp: "917016838316", // change to your number
   email: "hello@fpmcreation.in",
   instagram: "https://instagram.com/fpmcreation",
 };

@@ -1,4 +1,4 @@
-import frame from "@/assets/Cute Smiley Pot_1.png";
+import frame from "@/assets/Cute Smile Pot_2.png";
 import keychain from "@/assets/product-keychain_1.png";
 import idol from "@/assets/product-idol.jpg";
 import gift from "@/assets/product-gift.jpg";

@@ -26,7 +26,7 @@ export const products: Product[] = [
     price: 89,
     mrp: 120,
     rating: 4.2,
-    reviews: 0,
+    reviews: 3,
     image: keychain,
     badge: "Customisable",
     description:

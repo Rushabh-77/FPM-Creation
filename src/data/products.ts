@@ -1,4 +1,4 @@
-import frame from "@/assets/product-frame.jpg";
+import frame from "@/assets/Cute Smiley Pot_1.png";
 import keychain from "@/assets/product-keychain_1.png";
 import idol from "@/assets/product-idol.jpg";
 import gift from "@/assets/product-gift.jpg";
@@ -8,12 +8,12 @@ import type { Product } from "@/lib/site";
 export const products: Product[] = [
   {
     id: "royal-gold-frame",
-    name: "Royal Gold Heritage Frame",
+    name: "Aesthetic Twin Smiley Desktop Planter Set - Size 3.3 Inch",
     category: "Decorative Frames",
-    price: 549,
-    mrp: 999,
-    rating: 4.8,
-    reviews: 312,
+    price: 199,
+    mrp: 399,
+    rating: 4.2,
+    reviews: 5,
     image: frame,
     badge: "Bestseller",
     description:

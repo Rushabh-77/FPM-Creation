@@ -1,5 +1,5 @@
 import frame from "@/assets/product-frame.jpg";
-import keychain from "@/assets/product-keychain.jpg";
+import keychain from "@/assets/product-keychain_1.png";
 import idol from "@/assets/product-idol.jpg";
 import gift from "@/assets/product-gift.jpg";
 import type { Product } from "@/lib/site";
@@ -25,7 +25,7 @@ export const products: Product[] = [
     category: "Keychains",
     price: 89,
     mrp: 120,
-    rating: 0,
+    rating: 4.2,
     reviews: 0,
     image: keychain,
     badge: "Customisable",

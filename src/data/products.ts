@@ -27,7 +27,7 @@ export const products: Product[] = [
     mrp: 120,
     rating: 0,
     reviews: 0,
-    image: product-keychain_1,
+    image: keychain,
     badge: "Customisable",
     description:
       "Premium rose-gold engraved keychain — add any name, date or message. A heartfelt mini-gift that fits every pocket and every occasion.",

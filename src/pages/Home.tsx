@@ -71,19 +71,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* OFFER BANNER */}
-      <section className="bg-gold text-primary-foreground">
-        <div className="container py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-          <div>
-            <p className="font-serif text-2xl md:text-3xl font-semibold">🎉 Flat ₹50 OFF on your first order</p>
-            <p className="text-sm opacity-90">Use code <span className="font-bold tracking-wider">FPM50</span> at checkout · COD available</p>
-          </div>
-          <Link to="/shop">
-            <Button variant="secondary" size="lg" className="font-semibold">Claim Offer</Button>
-          </Link>
-        </div>
-      </section>
-
       {/* CATEGORIES / PRODUCTS */}
       <section className="container py-20">
         <div className="text-center max-w-2xl mx-auto mb-12">

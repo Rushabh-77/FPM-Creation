@@ -20,7 +20,7 @@ const About = () => (
       <div>
         <h2 className="font-serif text-4xl font-semibold">A boutique of little luxuries</h2>
         <p className="text-muted-foreground mt-4 leading-relaxed">
-          What started as handmade keychains for friends has grown into a full collection of decorative frames, blessed dashboard idols and curated gift hampers — loved by 12,000+ customers across India.
+          What started as handmade keychains for friends has grown into a full collection of decorative vases & planters, blessed dashboard idols and curated gift hampers — loved by 12,000+ customers across India.
         </p>
         <p className="text-muted-foreground mt-3 leading-relaxed">
           Every piece is hand-checked, beautifully packaged, and delivered with Cash on Delivery — because trust matters as much as taste.

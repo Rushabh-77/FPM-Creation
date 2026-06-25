@@ -9,7 +9,7 @@ export const products: Product[] = [
   {
     id: "royal-gold-frame",
     name: "Aesthetic Twin Smiley Desktop Planter Set - Size 3.3 Inch",
-    category: "Decorative Frames",
+    category: "Decorative Vase and Planter",
     price: 199,
     mrp: 399,
     rating: 4.2,

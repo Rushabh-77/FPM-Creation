@@ -1,4 +1,4 @@
-import frame from "@/assets/Cute Smile Pot_2.png";
+import greyPot from "@/assets/Grey pot.png";
 import keychain from "@/assets/product-keychain_1.png";
 import idol from "@/assets/product-idol.jpg";
 import gift from "@/assets/product-gift.jpg";
@@ -29,7 +29,7 @@ export const products: Product[] = [
     mrp: 450,
     rating: 4.6,
     reviews: 42,
-    image: vase,
+    image: greyPot,
     badge: "New",
     description:
       "Hand-painted glazed ceramic vase with a soft matte finish. Ideal for fresh blooms and tabletop decor in modern homes.",

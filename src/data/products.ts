@@ -2,6 +2,8 @@ import frame from "@/assets/Cute Smile Pot_2.png";
 import keychain from "@/assets/product-keychain_1.png";
 import idol from "@/assets/product-idol.jpg";
 import gift from "@/assets/product-gift.jpg";
+import vase from "@/assets/product-frame.jpg";
+import planterDuo from "@/assets/Cute Smiley Pot_1.png";
 import type { Product } from "@/lib/site";
 
 
@@ -18,6 +20,32 @@ export const products: Product[] = [
     badge: "Bestseller",
     description:
       "Hand-finished antique gold frame with intricate baroque carvings. Perfect for cherished memories, wedding portraits and gifting. Comes with a sturdy easel stand.",
+  },
+  {
+    id: "glazed-ceramic-vase",
+    name: "Glazed Ceramic Bud Vase",
+    category: "Decorative Vase and Planter",
+    price: 249,
+    mrp: 450,
+    rating: 4.6,
+    reviews: 42,
+    image: vase,
+    badge: "New",
+    description:
+      "Hand-painted glazed ceramic vase with a soft matte finish. Ideal for fresh blooms and tabletop decor in modern homes.",
+  },
+  {
+    id: "mini-planter-duo",
+    name: "Mini Planter Duo Set",
+    category: "Decorative Vase and Planter",
+    price: 329,
+    mrp: 599,
+    rating: 4.8,
+    reviews: 67,
+    image: planterDuo,
+    badge: "Trending",
+    description:
+      "A matching pair of mini planters with drainage trays. Perfect for succulents, herbs, or desktop greens.",
   },
   {
     id: "personalised-keychain",

@@ -78,6 +78,15 @@ const Home = () => {
           <h2 className="font-serif text-4xl md:text-5xl font-semibold mt-3">Loved by thousands across India</h2>
           <p className="text-muted-foreground mt-3">From wedding gifts to dashboard blessings — discover our most-loved pieces.</p>
         </div>
+
+        <div className="flex flex-wrap justify-center gap-3 mb-10">
+          {Array.from(new Set(products.map((product) => product.category))).map((category) => (
+            <Button key={category} asChild variant="secondary" size="sm">
+              <Link to={`/shop?category=${encodeURIComponent(category)}`}>{category}</Link>
+            </Button>
+          ))}
+        </div>
+
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
           {products.map((p) => <ProductCard key={p.id} product={p} />)}
         </div>

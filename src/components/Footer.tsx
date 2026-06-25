@@ -1,6 +1,9 @@
 import { Link } from "react-router-dom";
 import { Instagram, Mail, Phone, ShieldCheck, Truck, BadgeIndianRupee } from "lucide-react";
 import { SITE } from "@/lib/site";
+import { products } from "@/data/products";
+
+const categories = Array.from(new Set(products.map((product) => product.category)));
 
 export const Footer = () => (
   <footer className="bg-soft border-t border-border mt-24">
@@ -34,10 +37,16 @@ export const Footer = () => (
       <div>
         <p className="font-semibold mb-3">Shop</p>
         <ul className="space-y-2 text-sm text-muted-foreground">
-          <li><Link to="/shop" className="hover:text-primary">Decorative Frames</Link></li>
-          <li><Link to="/shop" className="hover:text-primary">Keychains</Link></li>
-          <li><Link to="/shop" className="hover:text-primary">Car Idols</Link></li>
-          <li><Link to="/shop" className="hover:text-primary">Gifting</Link></li>
+          {categories.map((category) => (
+            <li key={category}>
+              <Link
+                to={`/shop?category=${encodeURIComponent(category)}`}
+                className="hover:text-primary"
+              >
+                {category}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div>

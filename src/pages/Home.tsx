@@ -22,7 +22,7 @@ const Home = () => {
               priced to <span className="text-gold italic">delight</span>.
             </h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-lg">
-              Handpicked frames, personalised keychains, dashboard idols & curated hampers — affordable luxury, delivered across India with Cash on Delivery.
+              Handpicked frames, personalised keychains, dashboard idols & curated hampers — affordable luxury, delivered across India.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-8">
@@ -106,7 +106,6 @@ const Home = () => {
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: BadgeIndianRupee, title: "Cash on Delivery", desc: "Order with confidence — pay only when it reaches your doorstep." },
               { icon: Truck, title: "Pan-India Delivery", desc: "Quick & safely packed shipping to every pincode." },
               { icon: ShieldCheck, title: "Secure & Trusted", desc: "12,000+ orders fulfilled with 4.9★ average rating." },
               { icon: MessageCircle, title: "WhatsApp Support", desc: "Real humans, real fast. DM us anytime to order." },
@@ -132,7 +131,7 @@ const Home = () => {
         <div className="grid md:grid-cols-3 gap-6">
           {[
             { name: "Priya S.", city: "Mumbai", text: "The frame quality is stunning! Looks 10x more expensive than what I paid. Got it for my parents' anniversary 💕" },
-            { name: "Rahul M.", city: "Delhi", text: "Ordered the Ganesha idol for my new car. Beautiful finish and quick COD delivery. Highly recommend!" },
+            { name: "Rahul M.", city: "Delhi", text: "Ordered the Ganesha idol for my new car. Beautiful finish and quick delivery. Highly recommend!" },
             { name: "Anjali K.", city: "Bengaluru", text: "Personalised keychains were a hit at my sister's wedding. Packaging was so premium — felt like a luxury brand." },
           ].map((t) => (
             <div key={t.name} className="bg-card border border-border rounded-2xl p-6 shadow-soft">

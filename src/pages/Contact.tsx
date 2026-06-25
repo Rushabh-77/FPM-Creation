@@ -31,7 +31,7 @@ const Contact = () => {
             { icon: MessageCircle, title: "WhatsApp (Fastest)", value: SITE.phone, href: waLink("Hi FPM Creation!") },
             { icon: Phone, title: "Call Us", value: SITE.phone, href: `tel:${SITE.phone}` },
             { icon: Mail, title: "Email", value: SITE.email, href: `mailto:${SITE.email}` },
-            { icon: Instagram, title: "Instagram DM", value: "@fpmcreation", href: SITE.instagram },
+            { icon: Instagram, title: "Instagram DM", value: "@fpmcreation2025", href: SITE.instagram },
             { icon: MapPin, title: "Studio", value: "Made & shipped from India", href: "#" },
           ].map((c) => (
             <a key={c.title} href={c.href} target="_blank" rel="noreferrer"

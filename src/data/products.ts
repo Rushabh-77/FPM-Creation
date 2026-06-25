@@ -3,28 +3,29 @@ import keychain from "@/assets/product-keychain_1.png";
 import idol from "@/assets/product-idol.jpg";
 import gift from "@/assets/product-gift.jpg";
 import vase from "@/assets/product-frame.jpg";
-import planterDuo from "@/assets/Cute Smiley Pot_1.png";
-import cutePot from "@/assets/Cute Smiley pot.png";
+import planterDuo from "@/assets/Cute smile.png";
+import cutePot from "@/assets/Cute smile.png";
+import yellowPot from "@/assets/yellow pot.png";
 import type { Product } from "@/lib/site";
 
 
 export const products: Product[] = [
   {
     id: "royal-gold-frame",
-    name: "Aesthetic Twin Smiley Desktop Planter Set - Size 3.3 Inch",
+    name: "Yellow decorative Vase Set of 2",
     category: "Decorative Vase and Planter",
-    price: 199,
-    mrp: 399,
+    price: 129,
+    mrp: 199,
     rating: 4.2,
     reviews: 5,
-    image: greyPot,
+    image: yellowPot,
     badge: "Bestseller",
     description:
-      "Matte grey ceramic planter with sculpted curves and a drainable base. Perfect for succulents and desktop greenery in modern decor.",
+      "Add a touch of elegance to your space with this stylish decorative vase featuring a beautiful textured pattern. Perfect for displaying artificial flowers and enhancing home or office décor. Lightweight, durable, and ideal for desks, shelves, and tabletops.\n\n📏 **Dimensions:** Height: 12.5 cm | Length: 7.5 cm | Width: 7.5 cm\n\n*Note: Flowers shown in images are for display purposes only and are not included.*",
   },
   {
     id: "glazed-ceramic-vase",
-    name: "Geometric decorative vase",
+    name: "Geometric decorative vase Set of 2",
     category: "Decorative Vase and Planter",
     price: 129,
     mrp: 159,
@@ -33,46 +34,20 @@ export const products: Product[] = [
     image: greyPot,
     badge: "New",
     description:
-      "Hand-painted glazed ceramic vase with a soft matte finish. Ideal for fresh blooms and tabletop decor in modern homes.",
+      "Enhance your home décor with this modern geometric flower pot, featuring a stylish textured design that complements any interior space. Lightweight and durable, it is perfect for displaying small artificial flowers, succulents, or decorative arrangements on desks, shelves, and tabletops.\n\n📏 **Dimensions:** Height: 8 cm | Length: 7 cm | Width: 7 cm\n\n*Note: Flowers and decorative accessories shown in images are not included.*",
   },
   {
     id: "mini-planter-duo",
     name: "Mini Planter Duo Set",
     category: "Decorative Vase and Planter",
-    price: 329,
-    mrp: 599,
+    price: 259,
+    mrp: 359,
     rating: 4.8,
     reviews: 67,
     image: planterDuo,
     badge: "Trending",
     description:
-      "A matching pair of mini planters with drainage trays. Perfect for succulents, herbs, or desktop greens.",
-  },
-  {
-    id: "textured-stoneware-vase",
-    name: "Textured Stoneware Vase",
-    category: "Decorative Vase and Planter",
-    price: 299,
-    mrp: 499,
-    rating: 4.5,
-    reviews: 54,
-    image: vase,
-    badge: "Handcrafted",
-    description:
-      "A tall stoneware vase with a hand-textured finish. Adds sculptural charm to dried stems or fresh flowers.",
-  },
-  {
-    id: "succulent-planter-trio",
-    name: "Succulent Planter Trio Set",
-    category: "Decorative Vase and Planter",
-    price: 379,
-    mrp: 699,
-    rating: 4.7,
-    reviews: 81,
-    image: cutePot,
-    badge: "Trending",
-    description:
-      "Three compact planters in a coordinating set, designed for succulents, cacti, and small indoor plants.",
+      "Bring a playful touch to your décor with this adorable smiley-face planter. Perfect for succulents, small plants, or decorative displays, this lightweight and charming pot adds personality to desks, shelves, and tabletops.\n\n📏 **Size:** 3 × 3 inches\n\n*Note: Plants shown in images are for display purposes only and are not included.* 🌿😊",
   },
   {
     id: "personalised-keychain",

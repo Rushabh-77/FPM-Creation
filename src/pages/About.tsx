@@ -23,7 +23,7 @@ const About = () => (
           What started as handmade keychains for friends has grown into a full collection of decorative vases & planters, blessed dashboard idols and curated gift hampers — loved by 12,000+ customers across India.
         </p>
         <p className="text-muted-foreground mt-3 leading-relaxed">
-          Every piece is hand-checked, beautifully packaged, and delivered with Cash on Delivery — because trust matters as much as taste.
+          Every piece is hand-checked, beautifully packaged, and delivered with care — because trust matters as much as taste.
         </p>
       </div>
     </section>
@@ -34,7 +34,7 @@ const About = () => (
           { icon: Users, n: "12,000+", l: "Happy Customers" },
           { icon: Heart, n: "4.9★", l: "Average Rating" },
           { icon: Award, n: "500+", l: "5-Star Reviews" },
-          { icon: Sparkles, n: "Pan-India", l: "Delivery & COD" },
+          { icon: Sparkles, n: "Pan-India", l: "Delivery" },
         ].map((s) => (
           <div key={s.l} className="text-center bg-card border border-border rounded-2xl p-6 shadow-soft">
             <s.icon className="h-7 w-7 text-primary mx-auto" />

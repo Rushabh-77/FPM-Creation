@@ -4,7 +4,7 @@ export const SITE = {
   phone: "+91 7016838316",
   whatsapp: "917016838316", // change to your number
   email: "hello@fpmcreation.in",
-  instagram: "https://instagram.com/fpmcreation",
+  instagram: "https://instagram.com/fpmcreation2025",
 };
 
 export const waLink = (msg: string) =>

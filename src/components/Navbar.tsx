@@ -24,7 +24,6 @@ export const Navbar = () => {
           {Array.from({ length: 2 }).map((_, i) => (
             <div key={i} className="flex gap-12 shrink-0">
               <span className="flex items-center gap-2"><Sparkles className="h-3.5 w-3.5" /> Flat ₹50 OFF Today — Use Code: FPM50</span>
-              <span>✦ Cash on Delivery Available All Over India</span>
               <span>✦ Free Shipping Above ₹999</span>
               <span>✦ DM to Order on WhatsApp</span>
             </div>

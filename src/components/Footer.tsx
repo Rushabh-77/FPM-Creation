@@ -10,7 +10,6 @@ export const Footer = () => (
     {/* Trust strip */}
     <div className="container grid grid-cols-2 md:grid-cols-4 gap-6 py-10 border-b border-border">
       {[
-        { icon: BadgeIndianRupee, title: "Cash on Delivery", desc: "Pay after you receive" },
         { icon: Truck, title: "Pan-India Shipping", desc: "Free above ₹999" },
         { icon: ShieldCheck, title: "Secure Checkout", desc: "100% safe ordering" },
         { icon: Instagram, title: "DM to Order", desc: "Quick WhatsApp support" },
@@ -62,7 +61,7 @@ export const Footer = () => (
         <ul className="space-y-2 text-sm text-muted-foreground">
           <li className="flex items-center gap-2"><Phone className="h-4 w-4" /> {SITE.phone}</li>
           <li className="flex items-center gap-2"><Mail className="h-4 w-4" /> {SITE.email}</li>
-          <li className="flex items-center gap-2"><Instagram className="h-4 w-4" /> @fpmcreation</li>
+          <li className="flex items-center gap-2"><Instagram className="h-4 w-4" /> @fpmcreation2025</li>
         </ul>
       </div>
     </div>

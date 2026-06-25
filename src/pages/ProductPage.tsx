@@ -44,7 +44,7 @@ const ProductPage = () => {
           <p className="mt-6 text-foreground/85 leading-relaxed">{product.description}</p>
 
           <ul className="mt-6 space-y-2 text-sm">
-            {["Premium materials & finish", "Gift-ready packaging", "Cash on Delivery available", "Easy returns within 7 days"].map((b) => (
+            {["Premium materials & finish", "Gift-ready packaging", "Easy returns within 7 days"].map((b) => (
               <li key={b} className="flex items-center gap-2"><Check className="h-4 w-4 text-success" /> {b}</li>
             ))}
           </ul>
@@ -55,16 +55,15 @@ const ProductPage = () => {
                 <MessageCircle /> DM to Order
               </Button>
             </a>
-            <a href={waLink(`Hi! I'd like to place a Cash on Delivery order for ${product.name}.`)} target="_blank" rel="noreferrer">
+            <a href={waLink(`Hi FPM Creation, I want to order: ${product.name} (₹${product.price})`)} target="_blank" rel="noreferrer">
               <Button variant="gold" size="xl" className="w-full">
-                <BadgeIndianRupee /> Order COD
+                <BadgeIndianRupee /> Order Now
               </Button>
             </a>
           </div>
 
           <div className="grid grid-cols-3 gap-3 mt-8 pt-8 border-t border-border">
             {[
-              { icon: BadgeIndianRupee, label: "COD Available" },
               { icon: Truck, label: "Free over ₹999" },
               { icon: ShieldCheck, label: "Secure Order" },
             ].map((f) => (

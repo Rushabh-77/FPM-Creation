@@ -4,6 +4,7 @@ import idol from "@/assets/product-idol.jpg";
 import gift from "@/assets/product-gift.jpg";
 import vase from "@/assets/product-frame.jpg";
 import planterDuo from "@/assets/Cute Smiley Pot_1.png";
+import cutePot from "@/assets/Cute Smiley pot.png";
 import type { Product } from "@/lib/site";
 
 
@@ -16,17 +17,17 @@ export const products: Product[] = [
     mrp: 399,
     rating: 4.2,
     reviews: 5,
-    image: frame,
+    image: greyPot,
     badge: "Bestseller",
     description:
-      "Hand-finished antique gold frame with intricate baroque carvings. Perfect for cherished memories, wedding portraits and gifting. Comes with a sturdy easel stand.",
+      "Matte grey ceramic planter with sculpted curves and a drainable base. Perfect for succulents and desktop greenery in modern decor.",
   },
   {
     id: "glazed-ceramic-vase",
-    name: "Glazed Ceramic Bud Vase",
+    name: "Geometric decorative vase",
     category: "Decorative Vase and Planter",
-    price: 249,
-    mrp: 450,
+    price: 129,
+    mrp: 159,
     rating: 4.6,
     reviews: 42,
     image: greyPot,
@@ -46,6 +47,32 @@ export const products: Product[] = [
     badge: "Trending",
     description:
       "A matching pair of mini planters with drainage trays. Perfect for succulents, herbs, or desktop greens.",
+  },
+  {
+    id: "textured-stoneware-vase",
+    name: "Textured Stoneware Vase",
+    category: "Decorative Vase and Planter",
+    price: 299,
+    mrp: 499,
+    rating: 4.5,
+    reviews: 54,
+    image: vase,
+    badge: "Handcrafted",
+    description:
+      "A tall stoneware vase with a hand-textured finish. Adds sculptural charm to dried stems or fresh flowers.",
+  },
+  {
+    id: "succulent-planter-trio",
+    name: "Succulent Planter Trio Set",
+    category: "Decorative Vase and Planter",
+    price: 379,
+    mrp: 699,
+    rating: 4.7,
+    reviews: 81,
+    image: cutePot,
+    badge: "Trending",
+    description:
+      "Three compact planters in a coordinating set, designed for succulents, cacti, and small indoor plants.",
   },
   {
     id: "personalised-keychain",

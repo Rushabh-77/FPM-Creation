@@ -30,7 +30,7 @@ export const ProductCard = ({ product }: { product: Product }) => {
             src={image}
             alt={product.name}
             loading="lazy"
-            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 group-hover:scale-105 transition-smooth ${index === activeImageIndex ? "opacity-100" : "opacity-0"}`}
+            className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-700 group-hover:scale-105 transition-smooth ${index === activeImageIndex ? "opacity-100" : "opacity-0"}`}
           />
         ))}
         {product.badge && (

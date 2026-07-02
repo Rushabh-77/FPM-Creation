@@ -62,7 +62,7 @@ const Home = () => {
                   alt={`FPM Creation product showcase ${index + 1}`}
                   width={1600}
                   height={1200}
-                  className={`absolute inset-0 h-full w-full object-cover animate-float transition-opacity duration-700 ${index === activeImageIndex ? "opacity-100" : "opacity-0"}`}
+                  className={`absolute inset-0 h-full w-full object-contain animate-float transition-opacity duration-700 ${index === activeImageIndex ? "opacity-100" : "opacity-0"}`}
                 />
               ))}
             </div>

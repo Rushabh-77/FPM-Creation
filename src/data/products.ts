@@ -1,12 +1,17 @@
 import greyPot from "@/assets/Grey pot.png";
+import greyPotOne from "@/assets/Grey Pot_1.png";
+import greyPotTwo from "@/assets/Grey Pot_2.png";
 import keychain from "@/assets/product-keychain_1.png";
 import idol from "@/assets/product-idol.jpg";
 import customPhotoHolder from "@/assets/Custom Name Photo Holder_1.png";
 import customPhotoHolderAlt from "@/assets/Custom Name Photo Holder.png";
 import vase from "@/assets/product-frame.jpg";
 import planterDuo from "@/assets/Cute smile.png";
-import cutePot from "@/assets/Cute smile.png";
+import planterDuoOne from "@/assets/Cute Smile Pot_1.png";
+import planterDuoTwo from "@/assets/Cute Smile Pot_2.png";
 import yellowPot from "@/assets/yellow pot.png";
+import yellowPotOne from "@/assets/Yellow Pot_1.png";
+import yellowPotTwo from "@/assets/Yellow Pot_2.png";
 import type { Product } from "@/lib/site";
 
 
@@ -20,6 +25,7 @@ export const products: Product[] = [
     rating: 4.2,
     reviews: 5,
     image: yellowPot,
+    images: [yellowPot, yellowPotOne, yellowPotTwo],
     badge: "Bestseller",
     description:
       "Add a touch of elegance to your space with this stylish decorative vase featuring a beautiful textured pattern. Perfect for displaying artificial flowers and enhancing home or office décor. Lightweight, durable, and ideal for desks, shelves, and tabletops.\n\n📏 **Dimensions:** Height: 12.5 cm | Length: 7.5 cm | Width: 7.5 cm\n\n*Note: Flowers shown in images are for display purposes only and are not included.*",
@@ -33,6 +39,7 @@ export const products: Product[] = [
     rating: 4.6,
     reviews: 42,
     image: greyPot,
+    images: [greyPot, greyPotOne, greyPotTwo],
     badge: "New",
     description:
       "Enhance your home décor with this modern geometric flower pot, featuring a stylish textured design that complements any interior space. Lightweight and durable, it is perfect for displaying small artificial flowers, succulents, or decorative arrangements on desks, shelves, and tabletops.\n\n📏 **Dimensions:** Height: 8 cm | Length: 7 cm | Width: 7 cm\n\n*Note: Flowers and decorative accessories shown in images are not included.*",
@@ -46,6 +53,7 @@ export const products: Product[] = [
     rating: 4.8,
     reviews: 67,
     image: planterDuo,
+    images: [planterDuo, planterDuoOne, planterDuoTwo],
     badge: "Trending",
     description:
       "Bring a playful touch to your décor with this adorable smiley-face planter. Perfect for succulents, small plants, or decorative displays, this lightweight and charming pot adds personality to desks, shelves, and tabletops.\n\n📏 **Size:** 3 × 3 inches\n\n*Note: Plants shown in images are for display purposes only and are not included.* 🌿😊",

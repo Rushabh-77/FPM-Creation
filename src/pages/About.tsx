@@ -1,5 +1,4 @@
 import { Heart, Sparkles, Award, Users } from "lucide-react";
-import hero from "@/assets/hero.jpg";
 
 const About = () => (
   <>
@@ -10,20 +9,7 @@ const About = () => (
           Crafted with <span className="text-gold italic">heart</span>, gifted with <span className="text-gold italic">pride</span>
         </h1>
         <p className="mt-5 text-lg text-muted-foreground">
-          FPM Creation began with a simple belief — every Indian deserves to gift something beautiful, without overspending. From our small studio to homes across the country, we curate luxury that feels personal.
-        </p>
-      </div>
-    </section>
-
-    <section className="container py-20 grid lg:grid-cols-2 gap-12 items-center">
-      <img src={hero} alt="FPM Creation studio" className="rounded-3xl shadow-elegant w-full object-cover" loading="lazy" />
-      <div>
-        <h2 className="font-serif text-4xl font-semibold">A boutique of little luxuries</h2>
-        <p className="text-muted-foreground mt-4 leading-relaxed">
-          What started as handmade keychains for friends has grown into a full collection of decorative vases & planters, blessed dashboard idols and curated gift hampers — loved by 12,000+ customers across India.
-        </p>
-        <p className="text-muted-foreground mt-3 leading-relaxed">
-          Every piece is hand-checked, beautifully packaged, and delivered with care — because trust matters as much as taste.
+          FPM Creation is your destination for beautifully crafted personalized gifts and modern home décor. We create custom name piggy banks, keychains, decorative flower vases, and unique gift items designed to make every occasion memorable. With a focus on quality, creativity, and customer satisfaction, we turn your ideas into products you'll love to gift and display.
         </p>
       </div>
     </section>

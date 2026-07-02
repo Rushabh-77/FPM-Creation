@@ -1,12 +1,24 @@
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { ArrowRight, BadgeIndianRupee, MessageCircle, ShieldCheck, Sparkles, Star, Truck } from "lucide-react";
+import { ArrowRight, MessageCircle, ShieldCheck, Sparkles, Star, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ProductCard } from "@/components/ProductCard";
 import { products } from "@/data/products";
 import { waLink } from "@/lib/site";
-import hero from "@/assets/hero.jpg";
+
+const heroSlides = products.map((product) => product.image);
 
 const Home = () => {
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setActiveImageIndex((prev) => (prev + 1) % heroSlides.length);
+    }, 3000);
+
+    return () => window.clearInterval(interval);
+  }, []);
+
   return (
     <>
       {/* HERO */}
@@ -51,21 +63,28 @@ const Home = () => {
 
           <div className="relative animate-fade-up" style={{ animationDelay: "0.15s" }}>
             <div className="absolute -inset-6 bg-gold opacity-10 blur-3xl rounded-full" />
-            <img
-              src={hero}
-              alt="FPM Creation luxury gift collection — frames, idols and keychains"
-              width={1600}
-              height={1200}
-              className="relative rounded-3xl shadow-elegant w-full object-cover animate-float"
-            />
-            <div className="absolute -bottom-6 -left-4 sm:left-6 bg-card border border-border rounded-2xl px-4 py-3 shadow-elegant flex items-center gap-3">
-              <div className="h-10 w-10 rounded-full bg-gold flex items-center justify-center text-primary-foreground">
-                <BadgeIndianRupee className="h-5 w-5" />
-              </div>
-              <div>
-                <p className="text-xs text-muted-foreground">Today only</p>
-                <p className="font-bold text-sm">Flat ₹50 OFF — FPM50</p>
-              </div>
+            <div className="relative aspect-[4/3] overflow-hidden rounded-3xl shadow-elegant">
+              {heroSlides.map((image, index) => (
+                <img
+                  key={`${image}-${index}`}
+                  src={image}
+                  alt={`FPM Creation product showcase ${index + 1}`}
+                  width={1600}
+                  height={1200}
+                  className={`absolute inset-0 h-full w-full object-cover animate-float transition-opacity duration-700 ${index === activeImageIndex ? "opacity-100" : "opacity-0"}`}
+                />
+              ))}
+            </div>
+            <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+              {heroSlides.map((_, index) => (
+                <button
+                  key={index}
+                  type="button"
+                  aria-label={`Show product image ${index + 1}`}
+                  onClick={() => setActiveImageIndex(index)}
+                  className={`h-2.5 rounded-full transition-all ${index === activeImageIndex ? "w-8 bg-gold" : "w-2.5 bg-white/70"}`}
+                />
+              ))}
             </div>
           </div>
         </div>

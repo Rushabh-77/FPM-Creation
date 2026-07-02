@@ -39,8 +39,6 @@ const ProductPage = () => {
             <span className="text-lg text-muted-foreground line-through">₹{product.mrp}</span>
             <span className="bg-destructive text-destructive-foreground text-xs font-bold px-2 py-1 rounded-md">{off}% OFF</span>
           </div>
-          <p className="text-xs text-success font-semibold mt-1">Inclusive of all taxes · Flat ₹50 OFF with code FPM50</p>
-
           <p className="mt-6 text-foreground/85 leading-relaxed">{product.description}</p>
 
           <ul className="mt-6 space-y-2 text-sm">

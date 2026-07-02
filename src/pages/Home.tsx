@@ -34,7 +34,7 @@ const Home = () => {
               priced to <span className="text-gold italic">delight</span>.
             </h1>
             <p className="mt-5 text-lg text-muted-foreground max-w-lg">
-              Handpicked frames, personalised keychains, dashboard idols & curated hampers — affordable luxury, delivered across India.
+              Handpicked frames, personalised keychains, decorative vases & curated hampers — affordable luxury, delivered across India.
             </p>
 
             <div className="flex flex-wrap gap-3 mt-8">
@@ -50,15 +50,6 @@ const Home = () => {
               </a>
             </div>
 
-            <div className="flex flex-wrap items-center gap-5 mt-8 text-sm text-muted-foreground">
-              <div className="flex items-center gap-1.5">
-                <div className="flex">
-                  {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-primary text-primary" />)}
-                </div>
-                <span className="font-semibold text-foreground">4.9</span>
-                <span>· 12,000+ happy customers</span>
-              </div>
-            </div>
           </div>
 
           <div className="relative animate-fade-up" style={{ animationDelay: "0.15s" }}>
@@ -95,7 +86,7 @@ const Home = () => {
         <div className="text-center max-w-2xl mx-auto mb-12">
           <p className="text-xs uppercase tracking-[0.3em] text-primary font-bold">Bestsellers</p>
           <h2 className="font-serif text-4xl md:text-5xl font-semibold mt-3">Loved by thousands across India</h2>
-          <p className="text-muted-foreground mt-3">From wedding gifts to dashboard blessings — discover our most-loved pieces.</p>
+          <p className="text-muted-foreground mt-3">From wedding gifts to everyday décor — discover our most-loved pieces.</p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-3 mb-10">
@@ -138,29 +129,6 @@ const Home = () => {
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* TESTIMONIALS */}
-      <section className="container py-20">
-        <div className="text-center max-w-2xl mx-auto mb-12">
-          <p className="text-xs uppercase tracking-[0.3em] text-primary font-bold">Happy Customers</p>
-          <h2 className="font-serif text-4xl md:text-5xl font-semibold mt-3">Real stories, real smiles</h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          {[
-            { name: "Priya S.", city: "Mumbai", text: "The frame quality is stunning! Looks 10x more expensive than what I paid. Got it for my parents' anniversary 💕" },
-            { name: "Rahul M.", city: "Delhi", text: "Ordered the Ganesha idol for my new car. Beautiful finish and quick delivery. Highly recommend!" },
-            { name: "Anjali K.", city: "Bengaluru", text: "Personalised keychains were a hit at my sister's wedding. Packaging was so premium — felt like a luxury brand." },
-          ].map((t) => (
-            <div key={t.name} className="bg-card border border-border rounded-2xl p-6 shadow-soft">
-              <div className="flex gap-0.5 mb-3">
-                {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-primary text-primary" />)}
-              </div>
-              <p className="text-foreground/90 italic">"{t.text}"</p>
-              <p className="mt-4 text-sm font-semibold">{t.name} <span className="text-muted-foreground font-normal">· {t.city}</span></p>
-            </div>
-          ))}
         </div>
       </section>
 

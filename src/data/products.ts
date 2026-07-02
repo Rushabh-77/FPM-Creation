@@ -64,19 +64,6 @@ export const products: Product[] = [
       "Premium rose-gold engraved keychain — add any name, date or message. A heartfelt mini-gift that fits every pocket and every occasion.",
   },
   {
-    id: "ganesha-dashboard-idol",
-    name: "Brass Ganesha Car Idol",
-    category: "Car Dashboard Idols",
-    price: 449,
-    mrp: 799,
-    rating: 4.9,
-    reviews: 274,
-    image: idol,
-    badge: "Shubh Labh",
-    description:
-      "Blessed brass-finish Ganesha idol crafted for your car dashboard. Anti-slip base, detailed carving and a divine presence for every journey.",
-  },
-  {
     id: "luxury-gift-hamper",
     name: "Custom Name Photo Holder",
     category: "Gifting Items",

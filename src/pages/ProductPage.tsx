@@ -61,14 +61,6 @@ const ProductPage = () => {
           <p className="text-xs uppercase tracking-[0.3em] text-primary font-bold">{product.category}</p>
           <h1 className="font-serif text-4xl md:text-5xl font-semibold mt-2">{product.name}</h1>
 
-          <div className="flex items-center gap-3 mt-3">
-            <div className="flex">
-              {[...Array(5)].map((_, i) => <Star key={i} className="h-4 w-4 fill-primary text-primary" />)}
-            </div>
-            <span className="text-sm font-semibold">{product.rating}</span>
-            <span className="text-sm text-muted-foreground">· {product.reviews} reviews</span>
-          </div>
-
           <div className="flex items-baseline gap-3 mt-6">
             <span className="text-4xl font-bold">₹{product.price}</span>
             <span className="text-lg text-muted-foreground line-through">₹{product.mrp}</span>

@@ -14,22 +14,6 @@ const About = () => (
       </div>
     </section>
 
-    <section className="bg-soft py-20">
-      <div className="container grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {[
-          { icon: Users, n: "12,000+", l: "Happy Customers" },
-          { icon: Heart, n: "4.9★", l: "Average Rating" },
-          { icon: Award, n: "500+", l: "5-Star Reviews" },
-          { icon: Sparkles, n: "Pan-India", l: "Delivery" },
-        ].map((s) => (
-          <div key={s.l} className="text-center bg-card border border-border rounded-2xl p-6 shadow-soft">
-            <s.icon className="h-7 w-7 text-primary mx-auto" />
-            <p className="font-serif text-4xl font-semibold mt-3 text-gold">{s.n}</p>
-            <p className="text-sm text-muted-foreground mt-1">{s.l}</p>
-          </div>
-        ))}
-      </div>
-    </section>
   </>
 );
 

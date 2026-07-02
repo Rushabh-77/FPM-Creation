@@ -55,11 +55,6 @@ export const ProductCard = ({ product }: { product: Product }) => {
       <div className="p-4 flex flex-col gap-2 flex-1">
         <p className="text-[11px] uppercase tracking-wider text-primary font-semibold">{product.category}</p>
         <h3 className="font-serif text-xl leading-tight line-clamp-2">{product.name}</h3>
-        <div className="flex items-center gap-1 text-xs">
-          <Star className="h-3.5 w-3.5 fill-primary text-primary" />
-          <span className="font-semibold">{product.rating}</span>
-          <span className="text-muted-foreground">({product.reviews})</span>
-        </div>
         <div className="flex items-baseline gap-2 mt-auto pt-2">
           <span className="text-xl font-bold">₹{product.price}</span>
           <span className="text-sm text-muted-foreground line-through">₹{product.mrp}</span>

@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, BadgeIndianRupee, Check, MessageCircle, ShieldCheck, Star, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,18 @@ const ProductPage = () => {
   const product = products.find((p) => p.id === id) ?? products[0];
   const off = Math.round(((product.mrp - product.price) / product.mrp) * 100);
   const related = products.filter((p) => p.id !== product.id).slice(0, 4);
+  const images = product.images?.length ? product.images : [product.image];
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+
+    const interval = window.setInterval(() => {
+      setActiveImageIndex((prev) => (prev + 1) % images.length);
+    }, 2500);
+
+    return () => window.clearInterval(interval);
+  }, [images.length]);
 
   return (
     <section className="container py-10">
@@ -19,7 +32,29 @@ const ProductPage = () => {
 
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
         <div className="bg-secondary rounded-3xl overflow-hidden shadow-soft">
-          <img src={product.image} alt={product.name} className="w-full aspect-square object-cover" />
+          <div className="relative aspect-square">
+            {images.map((image, index) => (
+              <img
+                key={`${product.id}-${image}`}
+                src={image}
+                alt={product.name}
+                className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${index === activeImageIndex ? "opacity-100" : "opacity-0"}`}
+              />
+            ))}
+          </div>
+          {images.length > 1 && (
+            <div className="flex justify-center gap-2 px-4 pb-4 pt-2">
+              {images.map((_, index) => (
+                <button
+                  key={`${product.id}-detail-dot-${index}`}
+                  type="button"
+                  aria-label={`Show image ${index + 1}`}
+                  onClick={() => setActiveImageIndex(index)}
+                  className={`h-2 rounded-full transition-all ${index === activeImageIndex ? "w-6 bg-gold" : "w-2 bg-muted-foreground/40"}`}
+                />
+              ))}
+            </div>
+          )}
         </div>
 
         <div>

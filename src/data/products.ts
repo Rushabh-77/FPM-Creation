@@ -1,7 +1,8 @@
 import greyPot from "@/assets/Grey pot.png";
 import keychain from "@/assets/product-keychain_1.png";
 import idol from "@/assets/product-idol.jpg";
-import gift from "@/assets/product-gift.jpg";
+import customPhotoHolder from "@/assets/Custom Name Photo Holder_1.png";
+import customPhotoHolderAlt from "@/assets/Custom Name Photo Holder.png";
 import vase from "@/assets/product-frame.jpg";
 import planterDuo from "@/assets/Cute smile.png";
 import cutePot from "@/assets/Cute smile.png";
@@ -77,15 +78,16 @@ export const products: Product[] = [
   },
   {
     id: "luxury-gift-hamper",
-    name: "Luxury Gifting Hamper",
+    name: "Custom Name Photo Holder",
     category: "Gifting Items",
-    price: 1299,
-    mrp: 1999,
+    price: 159,
+    mrp: 199,
     rating: 4.7,
     reviews: 186,
-    image: gift,
+    image: customPhotoHolder,
+    images: [customPhotoHolder, customPhotoHolderAlt],
     badge: "Festive Pick",
     description:
-      "Curated white-and-gold gift hamper with handpicked premium goodies, dried florals and elegant packaging. Ready to gift, ready to impress.",
+      "2-in-1: Photo Holder + Fridge Magnet\n🎁 Personalized • Unique • Perfect Gift",
   },
 ];

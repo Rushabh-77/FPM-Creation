@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { ArrowLeft, BadgeIndianRupee, Check, MessageCircle, ShieldCheck, Star, Truck } from "lucide-react";
+import { ArrowLeft, BadgeIndianRupee, Check, ChevronLeft, ChevronRight, MessageCircle, ShieldCheck, Star, Truck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ProductCard } from "@/components/ProductCard";
 import { products } from "@/data/products";
 import { waLink } from "@/lib/site";
+import ImageLightbox from "@/components/ImageLightbox";
 
 const ProductPage = () => {
   const { id } = useParams();
@@ -13,6 +14,13 @@ const ProductPage = () => {
   const related = products.filter((p) => p.id !== product.id).slice(0, 4);
   const images = product.images?.length ? product.images : [product.image];
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxIndex, setLightboxIndex] = useState(0);
+
+  const openLightbox = (index: number) => {
+    setLightboxIndex(index);
+    setLightboxOpen(true);
+  };
 
   useEffect(() => {
     if (images.length <= 1) return;
@@ -32,30 +40,36 @@ const ProductPage = () => {
 
       <div className="grid lg:grid-cols-2 gap-10 lg:gap-16">
         <div className="bg-secondary rounded-3xl overflow-hidden shadow-soft">
-          <div className="relative aspect-square">
-            {images.map((image, index) => (
-              <img
-                key={`${product.id}-${image}`}
-                src={image}
-                alt={product.name}
-                className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-700 ${index === activeImageIndex ? "opacity-100" : "opacity-0"}`}
-              />
-            ))}
-          </div>
-          {images.length > 1 && (
-            <div className="flex justify-center gap-2 px-4 pb-4 pt-2">
-              {images.map((_, index) => (
-                <button
-                  key={`${product.id}-detail-dot-${index}`}
-                  type="button"
-                  aria-label={`Show image ${index + 1}`}
-                  onClick={() => setActiveImageIndex(index)}
-                  className={`h-2 rounded-full transition-all ${index === activeImageIndex ? "w-6 bg-gold" : "w-2 bg-muted-foreground/40"}`}
+            <div className="relative aspect-square cursor-zoom-in" onClick={() => openLightbox(activeImageIndex)}>
+              {images.map((image, index) => (
+                <img
+                  key={`${product.id}-${image}`}
+                  src={image}
+                  alt={product.name}
+                  className={`absolute inset-0 h-full w-full object-contain transition-opacity duration-700 ${index === activeImageIndex ? "opacity-100" : "opacity-0"}`}
                 />
               ))}
             </div>
-          )}
-        </div>
+            {images.length > 1 && (
+              <div className="flex justify-center gap-2 px-4 pb-4 pt-2">
+                {images.map((_, index) => (
+                  <button
+                    key={`${product.id}-detail-dot-${index}`}
+                    type="button"
+                    aria-label={`Show image ${index + 1}`}
+                    onClick={() => setActiveImageIndex(index)}
+                    className={`h-2 rounded-full transition-all ${index === activeImageIndex ? "w-6 bg-gold" : "w-2 bg-muted-foreground/40"}`}
+                  />
+                ))}
+              </div>
+            )}
+          </div>
+          <ImageLightbox
+            images={images}
+            open={lightboxOpen}
+            defaultIndex={lightboxIndex}
+            onOpenChange={setLightboxOpen}
+          />
 
         <div>
           <p className="text-xs uppercase tracking-[0.3em] text-primary font-bold">{product.category}</p>

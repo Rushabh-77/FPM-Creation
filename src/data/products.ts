@@ -5,6 +5,8 @@ import keychain from "@/assets/product-keychain_1.png";
 import idol from "@/assets/product-idol.jpg";
 import customPhotoHolder from "@/assets/Custom Name Photo Holder_1.png";
 import customPhotoHolderAlt from "@/assets/Custom Name Photo Holder.png";
+import coasters from "@/assets/Adventure Coaster_1.png";
+import coastersAlt from "@/assets/Adventure Coaster_2.png";
 import vase from "@/assets/product-frame.jpg";
 import planterDuo from "@/assets/Cute smile.png";
 import planterDuoOne from "@/assets/Cute Smile Pot_1.png";
@@ -72,7 +74,7 @@ export const products: Product[] = [
       "Premium rose-gold engraved keychain — add any name, date or message. A heartfelt mini-gift that fits every pocket and every occasion.",
   },
   {
-    id: "luxury-gift-hamper",
+    id: "custom-name-photo-holder",
     name: "Custom Name Photo Holder",
     category: "Gifting Items",
     price: 159,
@@ -84,5 +86,19 @@ export const products: Product[] = [
     badge: "Festive Pick",
     description:
       "2-in-1: Photo Holder + Fridge Magnet\n🎁 Personalized • Unique • Perfect Gift",
+  },
+  {
+    id: "adventure-coasters",
+    name: "Adventure Coaster Set",
+    category: "Coasters",
+    price: 149,
+    mrp: 199,
+    rating: 4.5,
+    reviews: 24,
+    image: coasters,
+    images: [coasters, coastersAlt],
+    badge: "New",
+    description:
+      "Bring the outdoors to your table with this **Adventure Coaster Set**. Featuring four unique mountain-inspired designs and a matching holder, these coasters help protect surfaces from water rings and condensation. Perfect for cold drinks, coffee tables, office desks, RVs, cabins, or as a thoughtful gift for nature lovers.",
   },
 ];

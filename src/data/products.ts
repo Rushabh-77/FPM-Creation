@@ -2,7 +2,11 @@ import greyPot from "@/assets/Grey pot.png";
 import greyPotOne from "@/assets/Grey Pot_1.png";
 import greyPotTwo from "@/assets/Grey Pot_2.png";
 import keychain from "@/assets/product-keychain_1.png";
-import idol from "@/assets/product-idol.jpg";
+import idolOne from "@/assets/Om Resin idol_1.png";
+import idolTwo from "@/assets/Om Resin idol_2.png";
+import idolThree from "@/assets/Om Resin idol_3.png";
+import idolFour from "@/assets/Om Resin idol_4.png";
+import idolFive from "@/assets/Om Resin idol_5.png";
 import customPhotoHolder from "@/assets/Custom Name Photo Holder_1.png";
 import customPhotoHolderAlt from "@/assets/Custom Name Photo Holder.png";
 import coasters from "@/assets/Adventure Coaster_1.png";
@@ -59,6 +63,20 @@ export const products: Product[] = [
     badge: "Trending",
     description:
       "Bring a playful touch to your décor with this adorable smiley-face planter. Perfect for succulents, small plants, or decorative displays, this lightweight and charming pot adds personality to desks, shelves, and tabletops.\n\n📏 **Size:** 3 × 3 inches\n\n*Note: Plants shown in images are for display purposes only and are not included.* 🌿😊",
+  },
+  {
+    id: "car-dashboard-idol",
+    name: "Resin Om Idol – Symbol of Peace & Positivity",
+    category: "Home Decor",
+    price: 189,
+    mrp: 259,
+    rating: 4.7,
+    reviews: 32,
+    image: idolOne,
+    images: [idolOne, idolTwo, idolThree, idolFour, idolFive],
+    badge: "New",
+    description:
+      "Invite divine energy into your space with our beautifully handcrafted Resin Om Idol. Designed with a premium glossy finish and elegant detailing, this decorative piece represents peace, positivity, and spiritual harmony. Whether placed in your home, office, pooja room, or on your car dashboard, it adds a touch of devotion and sophistication to any setting.",
   },
   {
     id: "personalised-keychain",

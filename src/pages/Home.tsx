@@ -107,6 +107,21 @@ const Home = () => {
         </div>
       </section>
 
+      {/* HOME DECOR PICKS */}
+      <section className="container py-20">
+        <div className="text-center max-w-2xl mx-auto mb-12">
+          <p className="text-xs uppercase tracking-[0.3em] text-primary font-bold">Home Decor</p>
+          <h2 className="font-serif text-4xl md:text-5xl font-semibold mt-3">Curated décor for home and car</h2>
+          <p className="text-muted-foreground mt-3">From beautiful planters to our new car dashboard idol, these pieces add charm, personality, and positive energy to every space.</p>
+        </div>
+
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          {products
+            .filter((product) => ["Decorative Vase and Planter", "Home Decor"].includes(product.category))
+            .map((p) => <ProductCard key={p.id} product={p} />)}
+        </div>
+      </section>
+
       {/* WHY FPM */}
       <section className="bg-soft py-20">
         <div className="container">

@@ -11,6 +11,9 @@ import customPhotoHolder from "@/assets/Custom Name Photo Holder_1.png";
 import customPhotoHolderAlt from "@/assets/Custom Name Photo Holder.png";
 import coasters from "@/assets/Adventure Coaster_1.png";
 import coastersAlt from "@/assets/Adventure Coaster_2.png";
+import dbzCoasters from "@/assets/DBZ Coaster_1.png";
+import dbzCoastersAlt from "@/assets/DBZ Coaster_2.png";
+import dbzCoastersThird from "@/assets/DBZ coaster_3.png";
 import vase from "@/assets/product-frame.jpg";
 import planterDuo from "@/assets/Cute smile.png";
 import planterDuoOne from "@/assets/Cute Smile Pot_1.png";
@@ -118,5 +121,19 @@ export const products: Product[] = [
     badge: "New",
     description:
       "Bring the outdoors to your table with this **Adventure Coaster Set**. Featuring four unique mountain-inspired designs and a matching holder, these coasters help protect surfaces from water rings and condensation. Perfect for cold drinks, coffee tables, office desks, RVs, cabins, or as a thoughtful gift for nature lovers.",
+  },
+  {
+    id: "dbz-coaster-set",
+    name: "Dragon Ball Z Coaster Set",
+    category: "Coasters",
+    price: 199,
+    mrp: 249,
+    rating: 4.8,
+    reviews: 38,
+    image: dbzCoasters,
+    images: [dbzCoasters, dbzCoastersAlt, dbzCoastersThird],
+    badge: "Anime Edition",
+    description:
+      "A premium Dragon Ball Z coaster set featuring Frieza, Vegeta, Goku, and Majin Buu. Built for everyday use and designed for true anime fans.",
   },
 ];

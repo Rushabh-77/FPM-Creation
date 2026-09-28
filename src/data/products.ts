@@ -83,7 +83,7 @@ export const products: Product[] = [
     images: [idolOne, idolTwo, idolThree, idolFour, idolFive],
     badge: "New",
     description:
-      "Invite divine energy into your space with our beautifully handcrafted Resin Om Idol. Designed with a premium glossy finish and elegant detailing, this decorative piece represents peace, positivity, and spiritual harmony. Whether placed in your home, office, pooja room, or on your car dashboard, it adds a touch of devotion and sophistication to any setting.",
+      "Invite divine energy into your space with our beautifully handcrafted Resin Om Idol. Designed with a glossy, elegant detailing, this decorative piece represents peace, positivity, and spiritual harmony. Whether placed in your home, office, pooja room, or on your car dashboard, it adds a touch of devotion and sophistication to any setting.",
   },
   {
     id: "personalised-keychain",

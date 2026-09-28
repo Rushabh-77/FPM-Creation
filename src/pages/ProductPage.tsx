@@ -83,9 +83,16 @@ const ProductPage = () => {
           <p className="mt-6 text-foreground/85 leading-relaxed">{product.description}</p>
 
           <ul className="mt-6 space-y-2 text-sm">
-            {["Premium materials & finish", "Gift-ready packaging", "Easy returns within 7 days"].map((b) => (
-              <li key={b} className="flex items-center gap-2"><Check className="h-4 w-4 text-success" /> {b}</li>
-            ))}
+            {(() => {
+              const features =
+                product.category === "Candles"
+                  ? ["Gift-ready packaging"]
+                  : ["Premium materials & finish", "Gift-ready packaging", "Easy returns within 7 days"];
+
+              return features.map((b) => (
+                <li key={b} className="flex items-center gap-2"><Check className="h-4 w-4 text-success" /> {b}</li>
+              ));
+            })()}
           </ul>
 
           <div className="grid sm:grid-cols-2 gap-3 mt-8">

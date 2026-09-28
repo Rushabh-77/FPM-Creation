@@ -19,6 +19,9 @@ import productGift from "@/assets/product-gift.jpg";
 import Tcup1 from "@/assets/T-cup 1.png";
 import Tcup2 from "@/assets/T-cup 2.png";
 import Tcup3 from "@/assets/T-cup 3.png";
+import utsavBloom1 from "@/assets/Utsav Bloom_1.png";
+import utsavBloom2 from "@/assets/Utsav Bloom_2.png";
+import utsavBloom3 from "@/assets/Utsav Bloom_3.png";
 import planterDuo from "@/assets/Cute smile.png";
 import planterDuoOne from "@/assets/Cute Smile Pot_1.png";
 import planterDuoTwo from "@/assets/Cute Smile Pot_2.png";
@@ -153,5 +156,19 @@ export const products: Product[] = [
     badge: "Handmade with love",
     description:
       "Add a warm, steady glow to any space with our compact 35mm × 10mm tealight candles. Encased in lightweight metal cups with lead-free wicks, these mini tealights deliver a clean, even, and smokeless burn. Ideal for diffusers, lanterns, home decor, and festive settings.",
+  },
+  {
+    id: "festive-bloom-candle",
+    name: "Festive Bloom Candle",
+    category: "Candles",
+    price: 85,
+    mrp: 399,
+    rating: 4.8,
+    reviews: 18,
+    image: utsavBloom1,
+    images: [utsavBloom1, utsavBloom2, utsavBloom3],
+    badge: "Festive",
+    description:
+      "Brighten your celebrations with our beautifully handcrafted **Festive Bloom Candle**, featuring a delicate flower design, vibrant colors, and elegant golden detailing. Perfect for **festivals, festive décor, gifting, and special occasions**, it adds warmth, beauty, and a joyful touch to every celebration.",
   },
 ];

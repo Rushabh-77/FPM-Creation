@@ -16,6 +16,9 @@ import dbzCoastersAlt from "@/assets/DBZ Coaster_2.png";
 import dbzCoastersThird from "@/assets/DBZ coaster_3.png";
 import vase from "@/assets/product-frame.jpg";
 import productGift from "@/assets/product-gift.jpg";
+import Tcup1 from "@/assets/T-cup 1.png";
+import Tcup2 from "@/assets/T-cup 2.png";
+import Tcup3 from "@/assets/T-cup 3.png";
 import planterDuo from "@/assets/Cute smile.png";
 import planterDuoOne from "@/assets/Cute Smile Pot_1.png";
 import planterDuoTwo from "@/assets/Cute Smile Pot_2.png";
@@ -139,16 +142,16 @@ export const products: Product[] = [
   },
   {
     id: "handcrafted-candle",
-    name: "Handcrafted Candle Collection",
+    name: "Compact Aluminum Cup Tealight Candles (35mm × 10mm) | Pack of 4",
     category: "Candles",
-    price: 199,
-    mrp: 299,
+    price: 70,
+    mrp: 129,
     rating: 4.9,
     reviews: 12,
-    image: productGift,
-    images: [productGift],
-    badge: "Handmade",
+    image: Tcup1,
+    images: [Tcup1, Tcup2, Tcup3],
+    badge: "Handmade with love",
     description:
-      "Light Up Your Moments with Elegance\n\nDiscover beautifully crafted candles designed to bring warmth, beauty, and a peaceful glow to every space. From festive celebrations to cozy evenings, our candles are made to create memorable moments with their elegant designs and enchanting presence.\n\nWhether you're decorating your home, celebrating a special occasion, or looking for a thoughtful gift, our collection adds a touch of **light, luxury, and love** to every moment.\n\n**Handcrafted with care. Made to brighten your world. 🕯️✨**",
+      "Add a warm, steady glow to any space with our compact 35mm × 10mm tealight candles. Encased in lightweight metal cups with lead-free wicks, these mini tealights deliver a clean, even, and smokeless burn. Ideal for diffusers, lanterns, home decor, and festive settings.",
   },
 ];

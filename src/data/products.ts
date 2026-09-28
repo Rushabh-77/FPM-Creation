@@ -15,6 +15,7 @@ import dbzCoasters from "@/assets/DBZ Coaster_1.png";
 import dbzCoastersAlt from "@/assets/DBZ Coaster_2.png";
 import dbzCoastersThird from "@/assets/DBZ coaster_3.png";
 import vase from "@/assets/product-frame.jpg";
+import productGift from "@/assets/product-gift.jpg";
 import planterDuo from "@/assets/Cute smile.png";
 import planterDuoOne from "@/assets/Cute Smile Pot_1.png";
 import planterDuoTwo from "@/assets/Cute Smile Pot_2.png";
@@ -135,5 +136,19 @@ export const products: Product[] = [
     badge: "Anime Edition",
     description:
       "A premium Dragon Ball Z coaster set featuring Frieza, Vegeta, Goku, and Majin Buu. Built for everyday use and designed for true anime fans.",
+  },
+  {
+    id: "handcrafted-candle",
+    name: "Handcrafted Candle Collection",
+    category: "Candles",
+    price: 199,
+    mrp: 299,
+    rating: 4.9,
+    reviews: 12,
+    image: productGift,
+    images: [productGift],
+    badge: "Handmade",
+    description:
+      "Light Up Your Moments with Elegance\n\nDiscover beautifully crafted candles designed to bring warmth, beauty, and a peaceful glow to every space. From festive celebrations to cozy evenings, our candles are made to create memorable moments with their elegant designs and enchanting presence.\n\nWhether you're decorating your home, celebrating a special occasion, or looking for a thoughtful gift, our collection adds a touch of **light, luxury, and love** to every moment.\n\n**Handcrafted with care. Made to brighten your world. 🕯️✨**",
   },
 ];

@@ -22,6 +22,9 @@ import Tcup3 from "@/assets/T-cup 3.png";
 import utsavBloom1 from "@/assets/Utsav Bloom_1.png";
 import utsavBloom2 from "@/assets/Utsav Bloom_2.png";
 import utsavBloom3 from "@/assets/Utsav Bloom_3.png";
+import heartShape1 from "@/assets/Heart Shape_1.png";
+import heartShape2 from "@/assets/Heart Shape_2.png";
+import heartShape3 from "@/assets/Heart Shape_3.png";
 import planterDuo from "@/assets/Cute smile.png";
 import planterDuoOne from "@/assets/Cute Smile Pot_1.png";
 import planterDuoTwo from "@/assets/Cute Smile Pot_2.png";
@@ -170,5 +173,19 @@ export const products: Product[] = [
     badge: "Festive",
     description:
       "Brighten your celebrations with our beautifully handcrafted **Festive Bloom Candle**, featuring a delicate flower design, vibrant colors, and elegant golden detailing. Perfect for **festivals, festive décor, gifting, and special occasions**, it adds warmth, beauty, and a joyful touch to every celebration.",
+  },
+  {
+    id: "blush-heart-love-candle",
+    name: "Blush Heart Love Candle Set of 5",
+    category: "Candles",
+    price: 125,
+    mrp: 399,
+    rating: 4.8,
+    reviews: 18,
+    image: heartShape1,
+    images: [heartShape1, heartShape2, heartShape3],
+    badge: "New",
+    description:
+      "Add a touch of warmth and romance to any space with our **Blush Heart Love Candle**. Beautifully crafted in a delicate heart shape with a soft pink finish and an elegant white heart accent, this candle creates a cozy and charming atmosphere when lit.\n\nPerfect for **romantic evenings, Valentine’s Day, anniversaries, gifting, home décor, and special celebrations**. Its graceful design also makes it a lovely decorative piece even when unlit.",
   },
 ];
